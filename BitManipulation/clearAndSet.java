@@ -19,11 +19,13 @@ class clearAndSet {
 		if(operation == 1){
 			int newNumber = bitMask | number;
 			System.out.println("After changing the bits from 0 to 1 : " + newNumber);
+			System.out.println("The binary number of number [ " + newNumber +" ]  is : " + Integer.toBinaryString(newNumber));
 		}else{
 			
 			int newBitMask = ~(bitMask);
 			int newNumber = newBitMask & number;
 			System.out.println("After changing the bits from 1 to 0 : " + newNumber);
+			System.out.println("The binary number of number [ " + newNumber +" ]  is : " + Integer.toBinaryString(newNumber));
 		}
 	}
 	
